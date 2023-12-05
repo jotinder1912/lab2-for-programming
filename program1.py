@@ -1,13 +1,20 @@
 x=int(input("enter the number of years: "))
-i=0
+i=1
+a=0
 total_months=x*12
 total_temp=0
 average_monthlytemp=0
 average_yearlytemp=0
 
 while (i<=total_months):
-    y=int(input("highest temperature for"*i," :"))
+    y=int(input(f"for month {i} :",))
     i=i+1
+    if (a>y):
+        a=y
+print ("highest temperature",a)
+    
+   
+
 total_temp=total_temp+y
 average_monthlytemp=total_temp/total_months
 average_yearlytemp=total_temp/x
