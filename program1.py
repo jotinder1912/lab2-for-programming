@@ -1,17 +1,21 @@
 x=int(input("enter the number of years: "))
 i=1
 a=0
+
 total_months=x*12
 total_temp=0
 average_monthlytemp=0
 average_yearlytemp=0
 
-while (i<=total_months):
-    y=int(input(f"for month {i} :",))
-    i=i+1
-    if (a>y):
-        a=y
-print ("highest temperature",a)
+while (i<=x):
+    i=1
+    while(i<=12):
+         y=float(input(f"for month {i} :",))
+         i=i+1  
+    if (a<y):
+        a=y   
+    print ("highest temperature",a)
+
     
    
 
